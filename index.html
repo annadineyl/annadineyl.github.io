@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Annisa Nadia</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200,300" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <ul id="scene">
+            <!-- Background -->
+            <li class="layer" data-depth="0.2"><div id="background"></div></li>
+
+            <!-- Texts -->
+            <li class="layer" data-depth="0.6" id="text" style="margin-top: 193px !important">
+                <h2>under construction..</h2>
+                <h1>ANNISA<br>NADIA</h1>
+            </li>
+
+            <!-- Circles -->
+            <li class="layer" data-depth="0.8">
+                <div class="depth-1 circle" id="circle-1"></div>
+                <div class="depth-1 circle" id="circle-2"></div>
+                <div class="depth-1 circle" id="circle-3"></div>
+            </li>
+
+            <li class="layer" data-depth="1">
+                <div class="depth-1 circle" id="circle-4"></div>
+                <div class="depth-2 circle" id="circle-5"></div>
+                <div class="depth-2 circle" id="circle-6"></div>
+            </li>
+
+            <li class="layer" data-depth="1.1">
+                <div class="depth-2 circle" id="circle-7"></div>
+            </li>
+
+            <li class="layer" data-depth="1.4">
+                <div class="depth-3 circle" id="circle-8"></div>
+                <div class="depth-3 circle" id="circle-9"></div>
+            </li>
+
+            <li class="layer" data-depth="1.6">
+                <div class="depth-4 circle" id="circle-10"></div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene, {
+            relativeInput: true
+        });
+    </script>
+</body>
+</html>
