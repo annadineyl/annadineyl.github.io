@@ -6,8 +6,22 @@
     width: 100%;
     height: 100%;
     background: #f6f6f6;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -23,8 +37,33 @@
 }
 
 .loader.hidden {
-    animation: fadeOut 2s;
-    animation-fill-mode: forwards;
+    -webkit-animation: fadeOut 2s;
+       -moz-animation: fadeOut 2s;
+         -o-animation: fadeOut 2s; 
+            animation: fadeOut 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@-o-keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 @keyframes fadeOut {
